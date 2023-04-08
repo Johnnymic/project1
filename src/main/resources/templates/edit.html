@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>ADD STUDENT HERE </h1>
+<form  th:object="${student}" th:action="@{/edit/{id}(id=${student.id})}" method="post">
+  <input name="firstname" placeholder="enter first name" th:field="*{firstName}"><br>
+
+  <input name="firstname" placeholder="enter lastname name" th:field="*{lastName}"><br>
+  <input name="firstname" placeholder="enter first name" th:field="*{email}"><br>
+  <button> update </button>
+</form>
+
+</body>
+</html>
